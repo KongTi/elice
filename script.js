@@ -1,6 +1,6 @@
 function clickbutton() {
   alert("구하러 왔구나!!");
-  alert("[아니 나도 잡혔어]");
+  alert("아니 나도 잡혔어");
   alert("당신도 대학원에 사로 잡혀버렸습니다!");
 }
 
