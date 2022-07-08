@@ -10,8 +10,14 @@ main {
   margin-left: 5%;
 }
 
+.center h2 {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 3px;
+}
+
 nav {
-  background-color: gray;
+  background-color: skyblue;
 }
 
 nav > div {
@@ -26,8 +32,12 @@ nav > div > a {
   font-size: 20px;
 }
 
+img {
+  border: 3px solid black;
+}
+
 h1 {
-  font-size: 75px;
+  font-size: 100px;
 }
 
 h2 {
@@ -40,7 +50,6 @@ h3 {
 }
 
 footer {
-  background-color: darkgray;
   padding: 50px 0px 20px 20px;
   font-size: 20px;
 }
@@ -48,4 +57,43 @@ footer {
 div.contain {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+ul li {
+  font-size: 30px;
+  margin: 10px 0px;
+  list-style-type: square;
+}
+
+#youtube {
+  animation-name: colorAni;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes colorAni {
+  from {
+    color: black;
+    font-weight: bold;
+  }
+
+  to {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .center {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  ul li {
+    font-size: 15px;
+  }
 }
