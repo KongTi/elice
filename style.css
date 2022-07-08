@@ -86,7 +86,7 @@ ul li {
   }
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 100px) and (max-width: 1000px) {
   .center {
     text-align: center;
   }
