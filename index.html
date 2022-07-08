@@ -2,83 +2,120 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" ; href="style.css" />
     <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet" />
-    <title>이력서</title>
+    <title>자 기 소 개</title>
   </head>
 
   <body>
     <header>
       <nav>
         <div><a href="#">홈</a></div>
-        <div><a href="#cv">이력서</a></div>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1 id="cv">이력서</h1>
-        <h2>홍 지 민</h2>
+      <section class="center">
+        <h1 id="cv">자 기 소 개</h1>
         <img src="출력용.jpg" alt="Photo" />
+        <h2>이름 : 홍 지 민</h2>
       </section>
+
       <div class="contain">
         <section class="item">
-          <h3>인적사항</h3>
-          <p><strong>생년월일: </strong>1994. 00. 00 | A형</p>
-          <p><strong>주소: </strong>대전광역시 유성구 장대동</p>
-          <p><strong>연락처: </strong>abcd@abcd.abcd | 010.0000.0000</p>
-        </section>
-
-        <section class="item">
-          <h3 id="study">학력사항</h3>
+          <h3>목 표</h3>
           <ul>
-            <li>2000.00 ~ 2000.00: 00중학교 | 대구</li>
-            <li>2000.00 ~ 2000.00: 00고등학교 | 대구</li>
-            <li>2000.00 ~ 2000.00: 00대학교 | 대전</li>
-            <li>2000.00 ~ 2000.00: 00대학원 | 대전</li>
+            <li>
+              <a href="https://elice.io/" target="_blank"
+                ><span style="color: rgb(115, 27, 216); font-weight: bold"
+                  >Elice AI 트랙</span
+                ></a
+              >을 통해 제게 어울리는 분야를 경험 해보고 싶습니다.
+            </li>
+            <li>
+              전문가 수준까지는 아니라도 이 정도는 만들 수 있다라는 것을
+              보여주고 싶습니다.
+            </li>
+            <li>관심 직무: 백엔드 개발자, 데이터 분석가</li>
           </ul>
         </section>
 
         <section class="item">
-          <h3>경력사항</h3>
-          <ol>
-            <li>엘리스 AI트랙</li>
-            <li>대학원</li>
-            <li>SCIE급 논문 투고 예정</li>
-          </ol>
+          <h3 id="study">관 심 분 야</h3>
+          <ul>
+            <li>백엔드 및 쿼리(SQL)</li>
+            <li>데이터 사이언스</li>
+            <li>머신러닝 및 딥러닝</li>
+            <li>AI 및 인공지능 서비스</li>
+          </ul>
         </section>
 
         <section class="item">
-          <h3>보유 스킬</h3>
+          <h3>기 대 사 항</h3>
+          <ul>
+            <li>내 자신에 대한 능력 향상</li>
+            <li>각종 개발 관련된 지식</li>
+            <li>++<span style="color: blue">취업</span></li>
+          </ul>
+        </section>
+
+        <section class="item">
+          <h3>정 보</h3>
           <ul>
             <li>
-              <a href="https://ko.wikipedia.org/wiki/HTML" target="_blank"
-                >HTML</a
-              >
+              취미:
+              <span id="youtube">유튜브</span> 편집 및 게임
+              <div style="display: flex; align-items: center; margin-top: 10px">
+                <a href="https://www.youtube.com/c/콩치" target="_blank"
+                  ><img
+                    src="https://www.daeiltech.co.kr/wp-content/uploads/2021/02/%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EB%A1%9C%EA%B3%A0.jpg"
+                    style="width: 50px; border: none" /></a
+                >&nbsp&nbsp&nbsp
+                <a href="https://www.instagram.com/kongstube/" target="_blank"
+                  ><img
+                    src="https://t1.daumcdn.net/cfile/tistory/99B6AB485D09F2132A"
+                    style="width: 50px; border: none" /></a
+                >&nbsp&nbsp&nbsp<<취미생활 SNS
+              </div>
             </li>
 
             <li>
-              <a href="https://ko.wikipedia.org/wiki/CSS" target="_blank"
-                >CSS</a
-              >
+              특이사항: 대학원 경험 있음
+              <input
+                type="button"
+                style="margin-left: 10px"
+                value="구출"
+                onclick="clickbutton()"
+              />
             </li>
 
             <li>
-              <a
-                href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC"
-                ;
-                target="_blank"
-                >PYTHON</a
-              >
+              요즘엔&nbsp
+              <input
+                type="button"
+                value="정답 맞추기"
+                onclick="anw()"
+              />&nbsp&nbsp에 빠져 있습니다.
             </li>
           </ul>
         </section>
       </div>
+      <script src="script.js"></script>
+      <section class="center">
+        <h3>하고 싶은 말</h3>
+        <p>
+          낯을 많이 가리지만, 새로운 사람들을 만나서 이야기하고 듣는 것을
+          좋아합니다.
+          <br />이번 활동을 통해 좋은 교우관계가 형성 됐으면 좋겠습니다.
+          <br />아직 많이 부족하지만 열심히해서 다른 레이서들과 함께 나아가
+          봅시다.
+        </p>
+      </section>
     </main>
   </body>
   <footer>
-    <div>Author by : 홍지민</div>
+    <div>Author by : 홍 지 민</div>
     <div>Copyright 2022-2022. All rights reserved.</div>
-    <div>주소: 대전광역시 유성구 00대학교</div>
   </footer>
 </html>
